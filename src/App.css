@@ -1,3 +1,7 @@
+html, #root, body {
+    height: 100%;
+    overflow-x: hidden;
+}
 .App {
   text-align: center;
 }
@@ -22,6 +26,44 @@
   font-size: large;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+#content-wrapper {
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+#section-article-wrapper {
+  width: inherit;
+}
+header, section, article, aside, footer {
+  border: solid 1px gray;
+  width: 100%;
+}
+header {
+  height: 15%;
+}
+nav {
+  height: 10%;
+  display: flex;
+  margin: auto;
+}
+section {
+  height: 50%;
+  background-color: red;
+}
+article {
+  height: 50%;
+  background-color: blue;
+}
+aside {
+  height: 100%;
+}
+footer {
+  height: 15%;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
